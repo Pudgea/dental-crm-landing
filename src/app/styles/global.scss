@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@600;700&display=swap');
+
+:root {
+  --primary: #165dfc;
+  --background: #f4f7fb;
+  --surface: #ffffff;
+  --surface-low: #f7f9fd;
+  --text-main: #1a1a1a;
+  --text-secondary: #6b7280;
+  --font-main: 'Manrope', sans-serif;
+  --font-accent: 'Space Grotesk', sans-serif;
+  --soft-shadow:
+    -8px -8px 16px rgba(255, 255, 255, 0.92),
+    8px 8px 18px rgba(15, 41, 95, 0.12);
+  --soft-shadow-small:
+    -5px -5px 10px rgba(255, 255, 255, 0.86),
+    5px 5px 10px rgba(15, 41, 95, 0.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  color: var(--text-main);
+  background:
+    radial-gradient(circle at 12% -4%, rgba(22, 93, 252, 0.14), transparent 36%),
+    radial-gradient(circle at 90% 12%, rgba(22, 93, 252, 0.11), transparent 28%),
+    var(--background);
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-accent);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a,
+button,
+input {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 2px solid rgba(22, 93, 252, 0.35);
+  outline-offset: 3px;
+}
